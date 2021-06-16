@@ -7,7 +7,50 @@ body {
     text-decoration: none;
 }
 
+header {
+    min-height: 350px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/pwj-module-8-my-blog-app/exercises/assets/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+}
 
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(/pwj-module-8-my-blog-app//exercises/assets/profile.png);
+    background-size: cover;
+}
+
+.profile-name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.subtext {
+    margin-top: 8px;
+}
+
+.main {
+    background-color: yellow;
+    height: 100px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container {
+    max-width: 750px;
+    min-width: 600px;
+    width: 100%;
+    background-color: gray;
+}
 
 footer {
     min-height: 100px;
