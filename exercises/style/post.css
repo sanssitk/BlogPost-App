@@ -1,13 +1,42 @@
 /* ADD styling for all of the divs in post.html to match  */
+.navigation {
+    border: 1px solid royalblue;
+    color: royalblue;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: fit-content;
+
+    transition: all 0.23s ease;
+}
+.navigation:hover , .navigation a:hover{
+    background-color: royalblue;
+    color: white;
+}
+.navigation a {
+    text-decoration: none;
+    color: royalblue;
+}
 
 #individual-post-title {
-
+font-size: 2rem;
+text-align: center;
+padding: 5px;
 }
 
 #individual-post-date {
-
+margin-top: 24px;
+font-size: 14px;
+font-weight: 600;
+color: #eaecee;
+padding: 16px;
+border-top: 1px solid #eaecee;
+border-bottom: 1px solid #eaecee;
 }
 
 #individual-post-content {
+    margin-top: 16px;
+    padding: 16px;
+    color: grey;
+    line-height: 1.4;
 
 }

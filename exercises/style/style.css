@@ -17,6 +17,21 @@ header {
     background-image: url(/pwj-module-8-my-blog-app/exercises/assets/banner.jpeg);
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+header>* {
+    z-index: 10;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
 .profile-image {
@@ -38,27 +53,95 @@ header {
 }
 
 .main {
-    background-color: yellow;
-    height: 100px;
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .main-container {
     max-width: 750px;
     min-width: 600px;
+    min-height: 150px;
     width: 100%;
-    background-color: gray;
+    padding: 0 16px;
+    
+}
+
+.post {
+    display: flex;
+    border: 1px solid #eaecee;
+    border-radius: 16px;
+    min-height: 200px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    transition: all 0.2s ;
+    cursor: pointer;
+}
+
+.post:hover{
+    transform: translate3d(8px, -8px, -8px);
+    box-shadow: 0 2rem 2rem 0 rgba(0,0,0,.1);
+}
+
+.post-image {
+    flex-basis: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-content {
+    flex-basis: 60%;
+    padding: 24px;
+}
+.post-date{
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 16px;
+}
+.post-title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.post-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+    line-height: 1.4;
+    max-height: 60px;
+    overflow: hidden;
+}
+.post-title h4 {
+    margin: 0;
+}
+.nav-button.new-post-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: #004186;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+.nav-button.new-post-button:hover{
+    background-color: #002349;
 }
 
 footer {
     min-height: 100px;
-    background-color: #eaecee70;
+    background-color: #eaecee;
     color: #929eaa;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 24px;
     font-size: 14px;
+    
 }
