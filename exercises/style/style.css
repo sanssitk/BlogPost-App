@@ -14,10 +14,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(/pwj-module-8-my-blog-app/exercises/assets/banner.jpeg);
     background-size: cover;
     background-position: center;
     position: relative;
+}
+.home-page header {
+    background-image: url(/pwj-module-8-my-blog-app/exercises/assets/banner.jpeg);
 }
 
 header>* {
@@ -103,6 +105,7 @@ header::after {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 12px;
+    color: black;
 }
 .post-text{
     font-size: 14px;
@@ -133,7 +136,9 @@ header::after {
 .nav-button.new-post-button:hover{
     background-color: #002349;
 }
-
+a.post-link {
+    text-decoration: none;
+}
 footer {
     min-height: 100px;
     background-color: #eaecee;
